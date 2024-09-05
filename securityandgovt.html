@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Aayush Portal - Professional Integration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.navbar {
+    background-color: #0044cc;
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #0044cc;
+}
+
+h2 {
+    color: #0044cc;
+    border-bottom: 2px solid #0044cc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature, .partnership-info, .dashboard-feature, .security-feature, .event-info, .api-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+img {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.text {
+    max-width: 60%;
+}
+
+h3 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #003399;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#grants">Grants</a></li>
+            <li><a href="#partnerships">Partnerships</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#endorsements">Endorsements</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#api">API Integration</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <header id="home">
+            <h1>Welcome to Startup Aayush Portal</h1>
+            <p>Your Gateway to Government-Backed Startup Support</p>
+        </header>
+
+        <!-- Grants Section -->
+        <section id="grants">
+            <h2>Government Grants</h2>
+            <div class="content">
+                <div class="grant-info">
+                    <img src="images/grants.jpg" alt="Government Grants">
+                    <div class="text">
+                        <h3>Tech Startup Grant Program</h3>
+                        <p>Detailed guides and resources for applying to government grants. Learn about eligibility, deadlines, and required documents to ensure a successful application.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnerships Section -->
+        <section id="partnerships">
+            <h2>Partnerships</h2>
+            <div class="content">
+                <div class="partnership-info">
+                    <img src="images/partnerships.jpg" alt="Partnerships">
+                    <div class="text">
+                        <h3>Formal Agreements with Agencies</h3>
+                        <p>We have formal agreements with key agencies like the Department of SMEs to foster collaboration and enhance support for startups. Explore our partnerships and how they benefit you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Government Grants Dashboard</h2>
+            <div class="content">
+                <div class="dashboard-feature">
+                    <img src="images/dashboard.jpg" alt="Grants Dashboard">
+                    <div class="text">
+                        <h3>Application Forms</h3>
+                        <p>Apply for grants directly through our integrated application forms.</p>
+                        <form id="grantApplicationForm">
+                            <label for="applicantName">Name:</label>
+                            <input type="text" id="applicantName" name="applicantName" required>
+                            <label for="grantAmount">Requested Amount:</label>
+                            <input type="number" id="grantAmount" name="grantAmount" required>
+                            <label for="documents">Upload Documents:</label>
+                            <input type="file" id="documents" name="documents" required>
+                            <button type="submit">Submit Application</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="dashboard-feature">
+                    <img src="images/status.jpg" alt="Status Tracking">
+                    <div class="text">
+                        <h3>Status Tracking</h3>
+                        <p>Track the status of your grant applications with real-time updates.</p>
+                    </div>
+                </div>
+                <div class="dashboard-feature">
+                    <img src="images/verification.jpg" alt="Document Verification">
+                    <div class="text">
+                        <h3>Document Verification</h3>
+                        <p>Upload and verify required documents securely through our platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Endorsements Section -->
+        <section id="endorsements">
+            <h2>Endorsements</h2>
+            <div class="content">
+                <div class="endorsement-info">
+                    <img src="images/endorsement.jpg" alt="Government Endorsements">
+                    <div class="text">
+                        <h3>Government Endorsements</h3>
+                        <p>Our platform is endorsed by reputable government bodies. Check out our endorsements and see the support we have received.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Section -->
+        <section id="security">
+            <h2>Data Security</h2>
+            <div class="content">
+                <div class="security-feature">
+                    <img src="images/security.jpg" alt="Data Security">
+                    <div class="text">
+                        <h3>Advanced Encryption</h3>
+                        <p>We use state-of-the-art encryption techniques to protect your data. All information is securely transmitted and stored.</p>
+                    </div>
+                </div>
+                <div class="security-feature">
+                    <img src="images/privacy.jpg" alt="Privacy Policies">
+                    <div class="text">
+                        <h3>Privacy Policies</h3>
+                        <p>Read our detailed privacy policies to understand how we protect your personal and business information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events">
+            <h2>Joint Initiatives</h2>
+            <div class="content">
+                <div class="event-info">
+                    <img src="images/events.jpg" alt="Events">
+                    <div class="text">
+                        <h3>Startup Pitch Competitions</h3>
+                        <p>Participate in pitch competitions organized in collaboration with government agencies. Gain exposure and potentially receive additional funding.</p>
+                    </div>
+                </div>
+                <div class="event-info">
+                    <img src="images/campaigns.jpg" alt="Public Campaigns">
+                    <div class="text">
+                        <h3>Public Awareness Campaigns</h3>
+                        <p>Join our campaigns to increase public awareness about your startup and the support available through our platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Integration Section -->
+        <section id="api">
+            <h2>API Integration</h2>
+            <div class="content">
+                <div class="api-feature">
+                    <img src="images/api.jpg" alt="API Integration">
+                    <div class="text">
+                        <h3>Business Registration</h3>
+                        <p>Connect with government APIs for business registration. Verify your business status and simplify the registration process directly through our platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+     
+
+document.getElementById('grantApplicationForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Your grant application has been submitted successfully!');
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Thank you for reaching out. We will get back to you soon!');
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Startup Aayush Portal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 1.2em;
+}
+
+.section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    color: #0056b3;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section-image {
+    max-width: 48%; /* Ensure images fit within the container */
+    height: auto;
+    border-radius: 8px;
+}
+
+#diagram {
+    text-align: center;
+    margin-top: 20px;
+}
+
+canvas {
+    max-width: 40%; /* Limit the maximum width to 40% */
+    height: auto;   /* Maintain aspect ratio */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: block; /* Center the canvas */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Jakasandra,Banglore,Karnataka,India</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91-9686744536</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>startupaayushportal.info.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup Aayush Portal</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link active">Services</a>
+                    <a href="platform.html" class="nav-item nav-link active">Platform Accessibility</a>
+                    <a href="applyshowcase.html" class="nav-item nav-link">Apply For Startup</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="blog.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="price.html" class="dropdown-item">Pricing Plan</a>
+                            <a href="feature.html" class="dropdown-item">Our features</a>
+                            <a href="team.html" class="dropdown-item">Team Members</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                            <a href="quote.html" class="dropdown-item">Free Quote</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <butaton type="button" class="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 bg-header" style="margin-bottom: 90px;">
+            <div class="row py-5">
+                <div class="col-12 pt-lg-5 mt-lg-5 text-center">
+                    <h1 class="display-4 text-white animated zoomIn">Platform Accessibility</h1>
+                    <a href="securityandgovt.html" class="h5 text-white">Security and Government Integration</a>
+                    <i class="far fa-circle text-white px-2"></i>
+                    <a href="government.html" class="h5 text-white">Government-Funded</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- Service Start 
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Platform Accessibility</h5>
+                <h1 class="mb-0">Empowering dreams, fueling innovation – Startup Aayush Portal: Where creative minds meet funding opportunities, transforming ideas into reality, one click at a time.</h1>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-shield-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Funding</h4>
+                        <p class="m-0">"At Startup Aayush Portal, we provide diverse funding opportunities, connecting entrepreneurs with private investors and government funding sources to fuel their business growth.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-pie text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Mentors</h4>
+                        <p class="m-0">At Startup Aayush Portal, we understand the importance of mentorship in guiding entrepreneurs towards success. That's why we offer access to seasoned mentors who provide invaluable insights, guidance, and support, empowering entrepreneurs to navigate challenges and achieve their goals.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-code text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Incubators</h4>
+                        <p class="m-0">At Startup Aayush Portal, we collaborate with leading incubators to provide entrepreneurs with access to specialized resources, mentorship, and networking opportunities. Through our partnership with incubators, startups can accelerate their growth, validate their ideas, and receive the support they need to thrive in today's competitive landscape.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fab fa-android text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Investors</h4>
+                        <p class="m-0">At Startup Aayush Portal, we connect entrepreneurs, investors, ranging from angel investors to venture capitalists, who are eager to pitch their businesses and secure funding, fostering valuable partnerships that drive growth and success.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-search text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Partnership</h4>
+                        <p class="m-0">At Startup Aayush Portal, we believe the power of partnership to fuel innovation & success. We collaborate with organizations,including government to support startups at every stage of their journey, fostering ecosystem of innovation and entrepreneurship.</p>
+                        <a class="btn btn-lg btn-primary rounded" href="">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
+                        <h3 class="text-white mb-3">Call Us For Quote</h3>
+                        <p class="text-white mb-3"> "Contact us today for a personalized quote tailored to your specific needs and requirements. Our team at Startup Aayush Portal is ready to assist you in exploring funding options, accessing mentorship opportunities, and navigating the entrepreneurial landscape. Call us now to take the first step towards turning your ideas into reality."
+                    </p>
+                        <h2 class="text-white mb-0">+91-7384196543</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    Service End -->
+
+
+    <!-- Platform Accessibility start  -->
+
+    <div class="container">
+        <header>
+            <h1>Why Choose Startup Aayush Portal?</h1>
+            <p class="subtitle">Innovative Solutions for Startup Funding and Support</p>
+        </header>
+        
+        <section class="section" id="investors">
+            <h2>Advantages for Investors</h2>
+            <img src="images/investors.jpeg" alt="Investors" class="section-image">
+            <img src="images/Designer.png" alt="Investors" class="section-image">
+            <p>
+                <strong>Access to High-Potential Startups:</strong> Our platform provides investors with exclusive access to a curated selection of high-potential startups. Each startup is rigorously evaluated and vetted for its market potential, team competence, and innovative solutions. This ensures that investors are presented with opportunities that have been meticulously assessed for their growth prospects and investment viability.
+            </p>
+            <p>
+                <strong>Government Collaboration and Risk Mitigation:</strong> By integrating government funding schemes and support mechanisms, we add an additional layer of security and credibility to each investment opportunity. This collaboration helps in mitigating risks associated with startup investments and provides investors with the confidence of robust financial backing and regulatory compliance.
+            </p>
+            <p>
+                <strong>Streamlined Investment Process:</strong> Our sophisticated dashboard allows investors to monitor and manage their investment portfolios with ease. Features include real-time performance tracking, detailed financial reports, and automated alerts for key milestones. This streamlined process ensures that investors can make informed decisions quickly and efficiently.
+            </p>
+            <p>
+                <strong>Enhanced Corporate Social Responsibility (CSR):</strong> Investing in startups that focus on societal impact not only supports innovation but also enhances your company's CSR profile. Our platform enables investors to engage in projects that contribute positively to various social and economic causes, thereby aligning with their sustainability and social impact goals.
+            </p>
+        </section>
+        
+        <section class="section" id="entrepreneurs">
+            <h2>Benefits for Entrepreneurs</h2>
+            <img src="images/enterpranaurs.jpeg" alt="Entrepreneurs" class="section-image">
+            <img src="images/Types Of Entrepreneurship (31).png" alt="Entrepreneurs" class="section-image">
+            <p>
+                <strong>Direct Access to Government Funding:</strong> Entrepreneurs can seamlessly connect with a range of government funding programs through our platform. This direct access simplifies the funding process, reduces bureaucratic hurdles, and accelerates the capital infusion necessary for startup growth and scaling.
+            </p>
+            <p>
+                <strong>Comprehensive Support Ecosystem:</strong> Beyond funding, our platform offers a robust support system including expert mentorship, startup incubators, and networking opportunities. This ecosystem is designed to foster growth, provide strategic guidance, and facilitate valuable connections with industry leaders and potential partners.
+            </p>
+            <p>
+                <strong>User-Friendly and Powerful Dashboard:</strong> Our intuitive dashboard empowers entrepreneurs to manage their startup journey effectively. It provides tools for tracking funding applications, receiving actionable feedback, and analyzing performance metrics. This centralized control enhances operational efficiency and ensures that entrepreneurs can focus on innovation and execution.
+            </p>
+            <p>
+                <strong>Engaged Community and Networking Opportunities:</strong> Joining our platform connects entrepreneurs with a vibrant community of like-minded individuals, investors, and partners. This networking environment fosters collaboration, knowledge sharing, and partnership opportunities that are crucial for the success and expansion of startups.
+            </p>
+        </section>
+        
+        <section class="section" id="engagement">
+            <h2>Platform Accessibility and Engagement</h2>
+            <img src="images/Designing-Sustainable-Communities--The-Role-of-Greenfield-Planning--Promoting-Community-Engagement-and-Accessibility.webp" alt="Engagement" class="section-image">
+            <img src="images/How-to-keep-team-members-motivated-and-engaged--Creating-a-Culture-of-Engagement.webp" alt="Engagement" class="section-image">
+            <p>
+                <strong>Multi-Channel Outreach Strategy:</strong> Our outreach strategy ensures maximum visibility and accessibility through a multi-channel approach. This includes a user-friendly website, a mobile application for on-the-go access, targeted digital marketing campaigns, and active participation in industry events and conferences.
+            </p>
+            <p>
+                <strong>Direct and Efficient Engagement:</strong> Users can interact with the platform through seamless online interfaces. Whether applying for funding or exploring investment opportunities, our platform's design prioritizes ease of use, ensuring that users can navigate and utilize features with minimal effort.
+            </p>
+            <p>
+                <strong>Ongoing Communication and Updates:</strong> We maintain a proactive communication strategy with our users, providing regular updates, newsletters, and interactive feedback mechanisms. This ensures that users stay informed about platform developments, new opportunities, and industry trends.
+            </p>
+        </section>
+        
+        <section class="section" id="diagram">
+            <h2>Engagement Distribution Diagram</h2>
+            <canvas id="interactionDiagram" width="600" height="400"></canvas>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Platform Accessibility end  -->
+
+
+ <!-- Testimonial Start -->
+ <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
+            <h1 class="mb-0">What Our Clients Say About Our  Services</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="img/samirpic.jpeg" style="width: 60px; height: 60px;" >
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Dipendra Kumar Singh</h4>
+                        <small class="text-uppercase">Network Analyst</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    "Startup Aayush Portal exceeded my expectations in every way. Their transparent evaluation process gave me confidence in the quality of the funding opportunities available, and their user-friendly platform made it easy to navigate the funding process. I'm grateful for their support and would highly recommend them to anyone looking to fund their startup." - Samir Singh, Founder of ABC Network Solutions
+                </div>
+            </div>
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="img/divay yadav.jpeg" style="width: 60px; height: 60px;" >
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Divay Prakash Yadav</h4>
+                        <small class="text-uppercase">IOT Engineer</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    "Startup Aayush Portal has been instrumental in turning my business idea into a reality. Their diverse funding options and expert guidance helped me secure the investment I needed to launch my startup. I highly recommend their platform to any entrepreneur looking to kickstart their journey." - Divay Praksh Yadav, Founder of XYZ Tech Startup
+                </div>
+            </div>
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="img/devashish.jpeg" style="width: 60px; height: 60px;" >
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Devashis Prajapat/h4>
+                        <small class="text-uppercase">Cloud Engineer</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    "I couldn't have asked for a better support system than Startup Aayush Portal. From connecting me with potential investors to providing invaluable mentorship, they were with me every step of the way. Thanks to their assistance, my business is thriving, and I'm excited for what the future holds." - Devashis Prajapat, CEO of ABC Company
+                </div>
+            </div>
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="img/koticha.jpeg" style="width: 60px; height: 60px;" >
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Pranay Koticha</h4>
+                        <small class="text-uppercase">IT Specialist</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    "Startup Aayush Portal transformed my entrepreneurial journey. Their 24/7 support team was responsive and helpful, guiding me through the funding process with ease. With their assistance, I was able to secure the funding needed to scale my business and achieve my goals. I'm grateful for their dedication and would recommend their platform to anyone serious about launching a successful startup." - Pranay Koticha, Founder of ABC IT Enterprises                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light my-4">
+                <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
+                    <img class="img-fluid rounded" src="img/roshan singh.jpeg" style="width: 60px; height: 60px;" >
+                    <div class="ps-4">
+                        <h4 class="text-primary mb-1">Roshan Singh</h4>
+                        <small class="text-uppercase">Network Administrator</small>
+                    </div>
+                </div>
+                <div class="pt-4 pb-5 px-5">
+                    "Startup Aayush Portal exceeded my expectations in every way. Their transparent evaluation process gave me confidence in the quality of the funding opportunities available, and their user-friendly platform made it easy to navigate the funding process. I'm grateful for their support and would highly recommend them to anyone looking to fund their startup." - Samir Singh, Founder of ABC Network Solutions
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="img/vendor-1.jpg" alt="">
+                    <img src="img/vendor-2.jpg" alt="">
+                    <img src="img/vendor-3.jpg" alt="">
+                    <img src="img/vendor-4.jpg" alt="">
+                    <img src="img/vendor-5.jpg" alt="">
+                    <img src="img/vendor-6.jpg" alt="">
+                    <img src="img/vendor-7.jpg" alt="">
+                    <img src="img/vendor-8.jpg" alt="">
+                    <img src="img/vendor-9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                        <a href="quote.html" class="navbar-brand">
+                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>Startup Portal</h1>
+                        </a>
+                        <p class="mt-3 mb-4">"Innovate. Inspire. Ignite. Startup Aayush Portal is your gateway to entrepreneurial success. Connect with us to unlock funding opportunities, expert guidance, and networking resources to fuel your startup journey.</p>
+                        <form action="">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                                <button class="btn btn-dark">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Get In Touch</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0">Jakasandra,Banglore,Karnataka,India</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">startupaayushportal.info.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+91-9686744536</p>
+                            </div>
+                            <div class="d-flex mt-4">
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Quick Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="applyshowcase.html"><i class="bi bi-arrow-right text-primary me-2"></i>Apply For Startup</a>
+                                <a class="text-light mb-2" href="team.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">Popular Links</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="index.html"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                                <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                                <a class="text-light mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                                <a class="text-light mb-2" href="applyshowcase.html"><i class="bi bi-arrow-right text-primary me-2"></i>Apply For Startup</a>
+                                <a class="text-light mb-2" href="team.html"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
+                                <a class="text-light mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
+                                <a class="text-light" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #061429;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Startup Aayush Portal</a>. All Rights Reserved. 
+						
+						Designed by Jeewan Kumar Thakur <a class="text-white border-bottom" href=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="service.html" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+    const ctx = document.getElementById('interactionDiagram').getContext('2d');
+const interactionDiagram = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Investors', 'Entrepreneurs', 'Platform'],
+        datasets: [{
+            label: 'Engagement Distribution',
+            data: [30, 50, 20], // Example data; adjust as needed
+            backgroundColor: ['#ff6384', '#36a2eb', '#cc65fe'],
+            borderColor: '#fff',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        let label = context.label || '';
+                        if (label) {
+                            label += ': ' + context.raw + '%';
+                        }
+                        return label;
+                    }
+                }
+            }
+        }
+    }
+});
+
+
+
+</script>
+
+    
+</body>
+
+</html>
